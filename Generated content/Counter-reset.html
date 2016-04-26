@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    counter-reset: seccion;
+}
+
+h1 {
+    counter-reset: subseccion;
+}
+
+h1:before {
+    counter-increment: seccion;
+    content: "Seccion " counter(seccion) ". ";
+}
+
+h2:before {
+    counter-increment: subseccion;
+    content: counter(seccion) "." counter(subseccion) " ";
+}
+</style>
+</head>
+
+<body>
+
+
+<h1>HTML tutorial</h1>
+<h2>HTML Tutorial</h2>
+<h2>XHTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+
+<h1>Scripting tutorial</h1>
+<h2>JavaScript</h2>
+<h2>VBScript</h2>
+
+<h1>XML tutorial</h1>
+<h2>XML</h2>
+<h2>XSL</h2>
+
+</body>
+</html>
